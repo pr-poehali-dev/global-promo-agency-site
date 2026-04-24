@@ -30,7 +30,6 @@ const services = [
 
 const cases = [
   { num: "6 000+", label: "билетов", event: "Global Winter Fest", venue: "VK Стадиум · 30 дек 2025", gallery: gwfPhotos },
-  { num: "14 200", label: "билетов", event: "Конное Гала-Шоу", venue: "Live Arena 2023", gallery: null },
   { num: "12 500+", label: "билетов", event: "TYGA в Москве", venue: "ЦСКА Арена 2025", gallery: null },
   { num: "5 500+", label: "билетов", event: "DABABY Concert", venue: "VK Стадиум 2025", gallery: null },
 ];
