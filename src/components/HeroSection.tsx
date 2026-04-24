@@ -67,7 +67,7 @@ export default function HeroSection({ heroLoaded }: HeroSectionProps) {
           {[
             { num: "250+", label: "Мероприятий" },
             { num: "10 лет", label: "На рынке" },
-            { num: "2 млн+", label: "Зрителей" },
+            { num: "1 млн+", label: "Зрителей" },
             { num: "50+", label: "Партнёров" },
           ].map(s => (
             <div key={s.label}>
