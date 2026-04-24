@@ -281,32 +281,40 @@ export default function Index() {
       </nav>
 
       {/* HERO */}
-      <section className="relative flex flex-col justify-end" style={{ minHeight: "100vh" }}>
-        <div className="absolute inset-0">
+      <section className="relative flex flex-col" style={{ minHeight: "100vh" }}>
+        {/* фото на весь экран */}
+        <div className="absolute inset-0 overflow-hidden">
           <img
             src="https://cdn.poehali.dev/files/673425be-f279-47c6-9152-b959abbcc0a7.jpg"
             alt="hero"
-            className="w-full h-full object-cover"
-            style={{ filter: "grayscale(100%)" }}
+            className="w-full h-full object-cover object-center"
+            style={{ filter: "grayscale(80%)", transform: "scale(1.05)" }}
           />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.85) 100%)" }} />
+          {/* лёгкий оверлей только снизу и по краям */}
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.65) 75%, rgba(0,0,0,0.95) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.4) 100%)" }} />
+          {/* кислотная линия сверху */}
           <div className="absolute top-0 left-0 right-0 h-1" style={{ background: ACID }} />
         </div>
-        <div className="relative z-10 px-6 md:px-16 pb-16 md:pb-24">
+
+        {/* контент — по центру экрана */}
+        <div className="relative z-10 flex flex-col justify-center flex-1 px-6 md:px-16 pt-32 pb-0"
+          style={{ minHeight: "75vh" }}>
           <div style={{
             opacity: heroLoaded ? 1 : 0,
-            transform: heroLoaded ? "translateY(0)" : "translateY(40px)",
-            transition: "opacity 1s 0.2s ease, transform 1s 0.2s ease",
+            transform: heroLoaded ? "translateY(0)" : "translateY(50px)",
+            transition: "opacity 1.1s 0.15s ease, transform 1.1s 0.15s ease",
           }}>
-            <p className="font-oswald text-sm tracking-[0.3em] uppercase mb-4" style={{ color: ACID }}>
-              Концертное агентство
+            <p className="font-oswald text-sm tracking-[0.35em] uppercase mb-5" style={{ color: ACID }}>
+              Концертное агентство · Москва
             </p>
-            <h1 className="font-bebas leading-none tracking-wide uppercase text-white mb-4"
-              style={{ fontSize: "clamp(3.5rem, 10vw, 9rem)" }}>
+            <h1 className="font-bebas leading-[0.9] tracking-wide uppercase text-white mb-6"
+              style={{ fontSize: "clamp(4rem, 12vw, 11rem)", textShadow: "0 4px 40px rgba(0,0,0,0.5)" }}>
               Создаём события,<br />
-              <span style={{ color: ACID }}>которые помнят</span>
+              <span style={{ color: ACID, WebkitTextStroke: "0px" }}>которые помнят</span>
             </h1>
-            <p className="font-ibm text-gray-300 text-lg md:text-xl max-w-lg mb-10">
+            <p className="font-ibm text-gray-200 text-lg md:text-xl max-w-xl mb-10"
+              style={{ textShadow: "0 2px 12px rgba(0,0,0,0.8)" }}>
               Организуем концерты, туры и фестивали мирового уровня в России с 2016 года
             </p>
             <div className="flex flex-wrap gap-4">
@@ -314,17 +322,22 @@ export default function Index() {
                 className="font-oswald font-bold text-base px-8 py-4 tracking-wider hover:opacity-85 transition-opacity uppercase">
                 Смотреть афишу
               </a>
-              <a href="#about" style={{ border: `1px solid rgba(255,255,255,0.4)`, color: "#fff" }}
+              <a href="#about" style={{ border: `1px solid rgba(255,255,255,0.55)`, color: "#fff", backdropFilter: "blur(4px)", background: "rgba(0,0,0,0.2)" }}
                 className="font-oswald font-bold text-base px-8 py-4 tracking-wider hover:border-white transition-colors uppercase">
                 О компании
               </a>
             </div>
           </div>
+        </div>
+
+        {/* статистика — прижата к низу поверх фото */}
+        <div className="relative z-10 px-6 md:px-16 pb-10">
           <div style={{
-            borderTop: `1px solid rgba(204,255,0,0.3)`,
+            borderTop: `1px solid rgba(204,255,0,0.4)`,
             opacity: heroLoaded ? 1 : 0,
-            transition: "opacity 1s 0.8s ease",
-          }} className="mt-14 pt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+            transition: "opacity 1s 0.9s ease",
+            backdropFilter: "blur(2px)",
+          }} className="pt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { num: "250+", label: "Мероприятий" },
               { num: "10 лет", label: "На рынке" },
@@ -332,14 +345,15 @@ export default function Index() {
               { num: "50+", label: "Партнёров" },
             ].map(s => (
               <div key={s.label}>
-                <div className="font-bebas text-3xl md:text-4xl" style={{ color: ACID }}>{s.num}</div>
-                <div className="font-ibm text-gray-400 text-sm">{s.label}</div>
+                <div className="font-bebas text-4xl md:text-5xl" style={{ color: ACID }}>{s.num}</div>
+                <div className="font-ibm text-gray-300 text-sm">{s.label}</div>
               </div>
             ))}
           </div>
         </div>
-        <div className="absolute bottom-8 right-8 hidden md:block" style={{ animation: "bounce 2s infinite" }}>
-          <Icon name="ChevronDown" size={24} style={{ color: ACID }} />
+
+        <div className="absolute bottom-6 right-8 hidden md:block" style={{ animation: "bounce 2s infinite" }}>
+          <Icon name="ChevronDown" size={28} style={{ color: ACID }} />
         </div>
       </section>
 
