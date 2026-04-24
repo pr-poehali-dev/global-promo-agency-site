@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1777054171684030041.html"
 	],
 	prefix: "",
 	theme: {
@@ -17,8 +18,15 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			bebas: ['Bebas Neue', 'sans-serif'],
+			oswald: ['Oswald', 'sans-serif'],
+			ibm: ['IBM Plex Sans', 'sans-serif'],
+		},
 		extend: {
 			colors: {
+				acid: '#CCFF00',
+				'acid-dark': '#AADD00',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
