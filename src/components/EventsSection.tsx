@@ -13,12 +13,10 @@ const captownShows = [
   { id: "ct6",  date: "27 МАЯ",  day: "СР", city: "Новосибирск",    venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
   { id: "ct7",  date: "29 МАЯ",  day: "ПТ", city: "Красноярск",     venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
   { id: "ct8",  date: "31 МАЯ",  day: "ВС", city: "Иркутск",        venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct9",  date: "4 ИЮН",   day: "ЧТ", city: "Хабаровск",      venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct10", date: "6 ИЮН",   day: "СБ", city: "Владивосток",    venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct11", date: "9 ИЮН",   day: "ВТ", city: "Нижний Новгород","venue": "Клуб",            ticketUrl: "https://captowntour.ru/" },
-  { id: "ct12", date: "11 ИЮН",  day: "ЧТ", city: "Санкт-Петербург","venue": "Клуб",            ticketUrl: "https://captowntour.ru/" },
-  { id: "ct13", date: "13 ИЮН",  day: "СБ", city: "Москва",         venue: "Urban",             ticketUrl: "https://moscow.qtickets.events/225340-captown" },
-  { id: "ct14", date: "15 ИЮН",  day: "ПН", city: "Самара",         venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
+  { id: "ct9",  date: "9 ИЮН",   day: "ПН", city: "Нижний Новгород", venue: "Клуб",             ticketUrl: "https://captowntour.ru/" },
+  { id: "ct10", date: "11 ИЮН",  day: "СР", city: "Санкт-Петербург", venue: "Клуб",             ticketUrl: "https://captowntour.ru/" },
+  { id: "ct11", date: "13 ИЮН",  day: "СБ", city: "Москва",          venue: "Urban",            ticketUrl: "https://moscow.qtickets.events/225340-captown" },
+  { id: "ct12", date: "15 ИЮН",  day: "ПН", city: "Самара",          venue: "Клуб",             ticketUrl: "https://captowntour.ru/" },
 ];
 
 const events = [
@@ -181,7 +179,7 @@ const CaptownTourBlock = () => (
           <div className="relative z-10 p-6 flex flex-col justify-end h-full">
             <div className="font-oswald text-xs tracking-[0.25em] uppercase mb-1" style={{ color: ACID }}>Большой тур</div>
             <div className="font-bebas text-4xl md:text-5xl text-white leading-none tracking-wide">CAPTOWN</div>
-            <div className="font-ibm text-gray-400 text-sm mt-1">14 городов · Май–Июнь 2026</div>
+            <div className="font-ibm text-gray-400 text-sm mt-1">12 городов · Май–Июнь 2026</div>
           </div>
         </div>
 
