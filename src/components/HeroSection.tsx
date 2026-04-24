@@ -11,7 +11,7 @@ export default function HeroSection({ heroLoaded }: HeroSectionProps) {
       {/* фото на весь экран */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src="https://cdn.poehali.dev/files/673425be-f279-47c6-9152-b959abbcc0a7.jpg"
+          src="https://cdn.poehali.dev/files/a77740a0-e31a-4183-9dd8-efa4783ec13a.jpg"
           alt="hero"
           className="w-full h-full object-cover object-center"
           style={{ filter: "grayscale(80%)", transform: "scale(1.05)" }}
