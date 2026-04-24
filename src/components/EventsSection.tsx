@@ -5,18 +5,20 @@ import { ACID, Reveal } from "@/components/ui/shared";
 const CAPTOWN_IMG = "https://cdn.qtickets.tech/thumbs/530142_445_0_0_0_auto_90_cc08600d.jpg";
 
 const captownShows = [
-  { id: "ct1",  date: "12 МАЯ",  day: "ВТ", city: "Краснодар",      venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct2",  date: "17 МАЯ",  day: "ВС", city: "Ростов-на-Дону", venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct3",  date: "21 МАЯ",  day: "ЧТ", city: "Казань",         venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct4",  date: "22 МАЯ",  day: "ПТ", city: "Уфа",            venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct5",  date: "24 МАЯ",  day: "ВС", city: "Екатеринбург",   venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct6",  date: "27 МАЯ",  day: "СР", city: "Новосибирск",    venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct7",  date: "29 МАЯ",  day: "ПТ", city: "Красноярск",     venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct8",  date: "31 МАЯ",  day: "ВС", city: "Иркутск",        venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
-  { id: "ct9",  date: "9 ИЮН",   day: "ПН", city: "Нижний Новгород", venue: "Клуб",             ticketUrl: "https://captowntour.ru/" },
-  { id: "ct10", date: "11 ИЮН",  day: "СР", city: "Санкт-Петербург", venue: "Клуб",             ticketUrl: "https://captowntour.ru/" },
-  { id: "ct11", date: "13 ИЮН",  day: "СБ", city: "Москва",          venue: "Urban",            ticketUrl: "https://moscow.qtickets.events/225340-captown" },
-  { id: "ct12", date: "15 ИЮН",  day: "ПН", city: "Самара",          venue: "Клуб",             ticketUrl: "https://captowntour.ru/" },
+  { id: "ct1",  date: "12 МАЯ",  day: "ПН", city: "Краснодар",       venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct2",  date: "14 МАЯ",  day: "СР", city: "Ростов-на-Дону",  venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct3",  date: "15 МАЯ",  day: "ЧТ", city: "Воронеж",         venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct4",  date: "16 МАЯ",  day: "ПТ", city: "Саратов",         venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct5",  date: "17 МАЯ",  day: "СБ", city: "Самара",          venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct6",  date: "19 МАЯ",  day: "ПН", city: "Казань",          venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct7",  date: "21 МАЯ",  day: "СР", city: "Пермь",           venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct8",  date: "22 МАЯ",  day: "ЧТ", city: "Екатеринбург",    venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct9",  date: "24 МАЯ",  day: "СБ", city: "Красноярск",      venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct10", date: "26 МАЯ",  day: "ПН", city: "Новосибирск",     venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct11", date: "27 МАЯ",  day: "ВТ", city: "Барнаул",         venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct12", date: "31 МАЯ",  day: "СБ", city: "Нижний Новгород", venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct13", date: "5 ИЮН",   day: "ПТ", city: "Санкт-Петербург", venue: "Клуб", ticketUrl: "https://captowntour.ru/" },
+  { id: "ct14", date: "13 ИЮН",  day: "СБ", city: "Москва",          venue: "Urban", ticketUrl: "https://moscow.qtickets.events/225340-captown" },
 ];
 
 const events = [
@@ -179,7 +181,7 @@ const CaptownTourBlock = () => (
           <div className="relative z-10 p-6 flex flex-col justify-end h-full">
             <div className="font-oswald text-xs tracking-[0.25em] uppercase mb-1" style={{ color: ACID }}>Большой тур</div>
             <div className="font-bebas text-4xl md:text-5xl text-white leading-none tracking-wide">CAPTOWN</div>
-            <div className="font-ibm text-gray-400 text-sm mt-1">12 городов · Май–Июнь 2026</div>
+            <div className="font-ibm text-gray-400 text-sm mt-1">14 городов · Май–Июнь 2026</div>
           </div>
         </div>
 
