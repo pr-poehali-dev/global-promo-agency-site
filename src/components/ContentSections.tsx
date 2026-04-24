@@ -187,8 +187,7 @@ export function ContactSection() {
           <Reveal delay={0.1}>
             <div className="space-y-5">
               {[
-                { icon: "Mail", label: "Email", val: "info@globalpromo.ru" },
-                { icon: "Phone", label: "Телефон", val: "+7 (495) 000-00-00" },
+                { icon: "Mail", label: "Email", val: "info@global.promo" },
                 { icon: "MapPin", label: "Адрес", val: "Москва, Россия" },
               ].map(c => (
                 <div key={c.label} className="flex items-center gap-4">
