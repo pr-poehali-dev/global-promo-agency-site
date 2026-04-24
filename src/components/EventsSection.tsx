@@ -5,7 +5,7 @@ import { ACID, Reveal } from "@/components/ui/shared";
 const CAPTOWN_IMG = "https://cdn.qtickets.tech/thumbs/530142_445_0_0_0_auto_90_cc08600d.jpg";
 
 const captownShows = [
-  { id: "ct1",  date: "16 МАЯ",  day: "СБ", city: "Краснодар",      venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
+  { id: "ct1",  date: "12 МАЯ",  day: "ВТ", city: "Краснодар",      venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
   { id: "ct2",  date: "17 МАЯ",  day: "ВС", city: "Ростов-на-Дону", venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
   { id: "ct3",  date: "21 МАЯ",  day: "ЧТ", city: "Казань",         venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
   { id: "ct4",  date: "22 МАЯ",  day: "ПТ", city: "Уфа",            venue: "Клуб",              ticketUrl: "https://captowntour.ru/" },
