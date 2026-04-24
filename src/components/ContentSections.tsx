@@ -24,7 +24,7 @@ export function AboutSection() {
         <Reveal>
           <div className="relative">
             <img
-              src="https://cdn.poehali.dev/files/fc88bfa1-e9e6-4567-89a1-dde27dc4d578.jpg"
+              src="https://cdn.poehali.dev/files/556ffe4a-8c50-41ba-9409-933cff31a094.jpg"
               alt="о нас"
               className="w-full object-cover"
               style={{ filter: "grayscale(100%)", aspectRatio: "4/3" }}
